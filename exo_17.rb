@@ -17,7 +17,7 @@ floors.times do
       end
      space -= 1
     square.times do
-        print "$"
+        print "#"
         end
         square += 2
         puts " "

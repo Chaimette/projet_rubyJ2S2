@@ -1,2 +1,11 @@
-# Écris un programme exo_11.rb qui va demander son âge à l'utilisateur, et qui, 
-#pour chaque année depuis sa naissance, dira "Il y a X ans, tu avais Y ans"
+print "Please enter your age: "
+age = gets.chomp.to_i
+
+annee_actuelle = Time.now.year
+
+(0..age).each do |annees_passes|
+  annee = annee_actuelle - annees_passes
+  age_actuel = age - annees_passes
+  puts "Il y a #{annees_passes} an(s), tu avais #{age_actuel} an(s)."
+end
+
